@@ -1,25 +1,25 @@
-# Original project archive: review and provenance
+# Research and technical review of the historical project
 
-## Verified repository facts
+## Proven repository and archive facts
 
-The original repository was created in June 2020 and contained one file, `Database Project.zip`, on its `master` branch. It had no top-level README, browsable SQL scripts or declared license when this documentation update was prepared.
+The repository was created in **June 2020** and originally contained `Database Project.zip` on its `master` branch, with no separate README or license. An automated ZIP audit subsequently verified that the archive contains **one PDF report** named `Database Project.pdf`, not a folder of SQL scripts. Its integrity check succeeded.
 
-The archived project itself must be inspected before describing specific database technology, domain, SQL dialect, table counts, constraints, application code, or accomplishments.
+A PDF report may document SQL, schemas or diagrams, but these do **not** become reproducible source files simply because they are pictured or described in the report.
 
-## Safe inspection process
+## Safe review procedure
 
-1. Preserve the original archive and work on a separate copy.
-2. Run `python tools/archive_audit.py --archive "Database Project.zip" --verify` to check member names and CRCs without extraction.
-3. Review the ZIP member list before opening files. Scan files with appropriate security tools in an isolated environment. Structural validation alone does not certify malware safety.
-4. Find the actual SQL/DDL scripts, schema diagram, code, reports, data files, dependencies and screenshots.
-5. Check for passwords, private credentials, personal data, student identifiers and third-party materials that must not be redistributed.
-6. Reconstruct the database with documented versions *only after* confirming the correct database engine and dependencies.
-7. Add source-supported technical documentation, test fixtures and project examples as a separate, reviewable improvement.
+1. Keep `Database Project.zip` intact as a historical source.
+2. Run `python tools/archive_audit.py --archive "Database Project.zip" --verify`.
+3. In an isolated local folder, extract the verified `Database Project.pdf` and review it with an updated PDF reader.
+4. Record the report's actual title, author/contributor roles, project goal, DBMS, tables, relationships, queries and conclusions **only where documented**.
+5. Check the report for passwords, personal data, third-party material and academic sharing restrictions before republishing excerpts or images.
+6. If original SQL or program source exists elsewhere, verify its provenance and shareability before adding it.
+7. Add technical documentation and reproducible experiments only when supported by the original project or when clearly marked as a later independent implementation.
 
-## For a future portfolio summary
+## What makes a persuasive database portfolio
 
-Explain the database's purpose, entities, relationships, normalization rationale, constraints, indexes, sample queries, DBMS version and reproducible setup procedure, **only when backed by the original files**. Separate the features of the original coursework from any modern documentation or refactoring.
+A reviewer should be able to understand the real use case, data model, primary/foreign keys, important constraints, queries, and a tested database setup if any was built. Present missing artifacts as limits or future work, never as completed capabilities.
 
-## Historical credit
+## Provenance
 
-The README and tooling added later are portfolio maintenance, not evidence that archive auditing or GitHub Actions was part of the original 2020 project. No general redistribution license was added to the academic archive.
+The README, archive audit and CI are **modern additions**. They do not prove the original coursework included these tools or tests. No license for the original project materials has been selected.

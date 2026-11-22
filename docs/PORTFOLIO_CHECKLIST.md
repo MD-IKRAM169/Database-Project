@@ -1,33 +1,30 @@
-# Checklist: make the database project a strong software portfolio
+# Database Project — professional portfolio checklist
 
-- [x] Preserve the original `Database Project.zip`.
-- [x] Add a clear README linking to the original project.
-- [x] Provide non-extracting archive inventory, offline tests and CI.
-- [x] Distinguish the original historical submission from later maintenance.
-- [ ] Inspect the archive and record its actual member files.
-- [ ] Review archived materials for credentials, personal data and intellectual-property restrictions.
-- [ ] Identify the actual DBMS, database domain and source code.
-- [ ] Publish safe, original SQL and other relevant source files as browsable text.
-- [ ] Add an ER diagram that matches the historical schema.
-- [ ] Describe the entities, keys, foreign keys, constraints and normalization choices.
-- [ ] Create a small synthetic dataset and a reproducible schema setup procedure.
-- [ ] Document real queries and their verified expected outputs.
-- [ ] Add actual SQL/database integration tests in CI where supported.
-- [ ] Provide any relevant screenshots with clear captions and provenance.
-- [ ] Publish measured project results only when verified.
-- [ ] Review and choose a license appropriate to the original authors and assets.
-- [ ] Add a GitHub About description and grounded topics.
+- [x] Preserve the original ZIP and its commit history.
+- [x] Identify its only member as `Database Project.pdf`.
+- [x] Provide a README and a documented archive inventory.
+- [x] Run safe archive-path and CRC checks, plus isolated unit tests in CI.
+- [x] Distinguish 2020 coursework from later portfolio-maintenance tooling.
+- [ ] Read the PDF and verify the actual project goal and database technologies.
+- [ ] Summarize the report's documented data model, constraints, queries and findings without guessing.
+- [ ] Review author attribution, personal identifiers and third-party material before republishing report excerpts.
+- [ ] If original SQL scripts exist elsewhere, publish them as browsable files **only with permission**.
+- [ ] If an ER diagram exists in the PDF, provide a carefully verified and attributed image or recreation.
+- [ ] Add a reproducible database implementation only when source code and dependencies are available or clearly label it as **new work**.
+- [ ] Add a synthetic test dataset and execution instructions if a runnable implementation is later developed.
+- [ ] Select an appropriate license after rights review.
+- [ ] Configure GitHub About description and topics.
 
-## Suggested GitHub About description
+## Suggested GitHub description
 
-> Archived academic database project with its original source ZIP, provenance documentation and automated archive-integrity checks.
+Historical academic database project preserved as a PDF report, with source provenance, documentation and automated archive checks.
 
-## Initial GitHub topics
+## Safe initial topics
 
-`database-project`, `database-design`, `academic-project`, `database-systems`
+`database-design`, `database-project`, `academic-project`, `database-systems`
 
-Only add technology-specific topics after verifying what the original ZIP actually contains.
+Do not add a specific DBMS (MySQL, PostgreSQL, Oracle, SQL Server, etc.) until it is confirmed from the PDF or other original sources.
 
-## Naming
+## Repository name
 
-`Database-Project` is generic but not inaccurate. A more specific title should name the verified project domain and DBMS; avoid guessing those details from the ZIP filename.
+`Database-Project` is broad but not inaccurate. Once the report's real topic is established, rename it to reflect the **verified** project domain rather than guessing from filenames.
