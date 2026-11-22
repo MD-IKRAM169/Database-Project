@@ -10,11 +10,13 @@ This document records facts observed from the original archive by the read-only 
 | Sole member | `Database Project.pdf` |
 | Member uncompressed size | **1,928,284 bytes** |
 | ZIP CRCs | **Passed** |
+| PDF page count | **18** |
+| Pages with extractable text | **18 of 18** |
 | Archive extraction performed | **No** |
 | Archived SQL/DDL source files | **None as separate ZIP members** |
 | PDF page text and diagrams reviewed | **Not yet** |
 
-Source: [GitHub Actions archive integrity run](https://github.com/MD-IKRAM169/Database-Project/actions/runs/45070240772).
+Source: [GitHub Actions ZIP inventory run](https://github.com/MD-IKRAM169/Database-Project/actions/runs/45070240772) and [PDF verification run](https://github.com/MD-IKRAM169/Database-Project/actions/runs/45070478810).
 
 ## Interpretation
 

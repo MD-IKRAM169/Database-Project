@@ -4,6 +4,7 @@
 - [x] Identify its only member as `Database Project.pdf`.
 - [x] Provide a README and a documented archive inventory.
 - [x] Run safe archive-path and CRC checks, plus isolated unit tests in CI.
+- [x] Verify the report is an 18-page readable PDF, without extracting it.
 - [x] Distinguish 2020 coursework from later portfolio-maintenance tooling.
 - [ ] Read the PDF and verify the actual project goal and database technologies.
 - [ ] Summarize the report's documented data model, constraints, queries and findings without guessing.

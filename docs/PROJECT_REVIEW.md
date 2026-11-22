@@ -2,7 +2,7 @@
 
 ## Proven repository and archive facts
 
-The repository was created in **June 2020** and originally contained `Database Project.zip` on its `master` branch, with no separate README or license. An automated ZIP audit subsequently verified that the archive contains **one PDF report** named `Database Project.pdf`, not a folder of SQL scripts. Its integrity check succeeded.
+The repository was created in **June 2020** and originally contained `Database Project.zip` on its `master` branch, with no separate README or license. An automated ZIP audit subsequently verified that the archive contains **one PDF report** named `Database Project.pdf`, not a folder of SQL scripts. Its integrity check succeeded. A subsequent in-memory PDF check verified **18 pages with extractable text**; this establishes basic readability but does not verify its technical claims.
 
 A PDF report may document SQL, schemas or diagrams, but these do **not** become reproducible source files simply because they are pictured or described in the report.
 
