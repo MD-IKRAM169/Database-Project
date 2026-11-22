@@ -1,4 +1,4 @@
-name: Archive integrity and tooling
+name: Archive and PDF integrity
 
 on:
   push:
@@ -16,7 +16,11 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Offline unit tests
+      - name: Install PDF parser for report check
+        run: python -m pip install -r requirements-report.txt
+      - name: Run offline unit tests
         run: python -m unittest discover -s tests -v
       - name: Validate and inventory original ZIP (read-only)
         run: python tools/archive_audit.py --archive 'Database Project.zip' --verify
+      - name: Check the archived PDF document in memory
+        run: python tools/report_audit.py --archive 'Database Project.zip'
